@@ -18,7 +18,7 @@ namespace Blog.DAL.Tests
         public void GetAllPost_OnePostInDb_ReturnOnePost()
         {
             // arrange
-            var context = new BlogContext();
+            var context = new BlogContext();//asdas
             context.Database.CreateIfNotExists();
             var repository = new BlogRepository();
             // act
